@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Useful Tags</title>
+</head>
+<body>
+    <h1  align="center" style="color: red;">Some common block tags</h1>
+    <h2>hr</h2>
+    <p>The < hr/> element used to stand for "horizontal line" and this is still how  it is typically displayed by browsers.However, in HTML5 the tag took on a semantic meaning. "semantic break".I will be using it often to break up example files when I want to display multiple tags in one file.</p>
+    <hr/>
+    <h2>address</h2>
+    <p>The < address> element indicates that the text is an address specific to the page, perhaps contact information for the author.</p>
+    <address>
+        1715 Walant Blwd<br/>
+        Ashabula OH 4400
+    </address>
+    <hr/>
+    <h2>blockquote</h2>
+    <p>The < blockquote> element is used for extended quotations.It should include the cite attribute in order to show or link to the source of the quote.</p>
+    <blockquote cite="https://www.brainyquote.com/authors/napoleon-hill-quotes">
+        <q>If you cannot do great things,do small things in a great way.</q> Napolean Hill
+    </blockquote>
+    <!-- cite attribute ka d tine pl quote yk resource htae pay tk thabaw pl...link nhate loh ma ya boo -->
+    <hr/>
+    <h2>details</h2>
+    <p>The < details> element is used in conjunction with the < summary> tag.It is one of the tags that was created in response to the repeated use of scripting to open and close content.It is not supported by all of the browsers yet though.</p>
+    <details>
+        <summary>The summary</summary>
+        <p>The rest of the details content goes here.If only < details> element is not supported, then the summary and the content are always visible.</p>
+    </details>
+   <hr/>
+   <hr/>
+   <hr/>
+   <h1  align="center" style="color: red;">Some common inline tags</h1>
+   <span>Why do we bother with inline elements? There are certainly times we want to mark up content, but we don't want to insert the line breaks around them.The < span> tag was the first to give that ability, but it was mostly used to style the code, and we don't want to do that.Some of the newer tags that still separate content and style are listed below.Remember, inline tags can flow next to each other and don't cause a line break before and after the element. We have seen this with links and images.</span>
+   <h2>Citing a source - cite</h2>
+   <p>The < cite> makes it much easier for people and bots to search the code for this specific information.</p>
+   <p>A great reference for these and other element is <cite><a href="https://www.brainyquote.com/authors/napoleon-hill-quotes" target="_blank">https://www.brainyquote.com/authors/napoleon-hill-quotes</a></cite></p>
+   <hr/>
+   <h2>Defining your abbreviations - abbr</h2>
+   <p>The < abbr> will display an abbrivation on the browser.But if a title attribute is specified in the tag, the title will appear when the mouse hovers over the abbreviation.Screen readers also provide the title information.</p>
+   <p>The days of the week are often abbreviated:<abbr title="Sunday">Sun</abbr>,<abbr title="Monday">Mon</abbr>,<abbr title="Tuesday">Tues</abbr>,etc.</p>
+   <hr/>
+   <h2>Specifying the use of time -time</h2>
+   <p>The < time> is again a completely semantic tag that can be used to search for specific information.</p>
+   <p>The party starts at <time>9:00pm</time>.</p>
+   <p>The party took place on <time>New Year's Eve</time>.</p>
+   <hr/>
+   <h2>Identifying code fragments - code</h2>
+   <p>The < code> element tends to be displayed in a different font, but also has the semantic meaning to convey information to as many people as possible.</p>
+   <p>I have been trying to learn how to write html but my <code>img</code> elements never seem to work.</p>
+   <hr/>
+   <h2>Using subscripts and superscripts - sub and sup</h2>
+   <p>The < sub> and < sup> elements are used to create the super and subscripts, e.g. (x+y)<sup>3</sup> or H<sub>2</sub>O. In the past, people would often paste mathematical images into the page. But images didn't convey the same meaning to all users.</p>
+   <hr/>
+   <hr/>
+   <hr/>
+   <h1 align="center" style="color: red;">Special tags that need "more"</h1>
+   <h2>button</h2>
+   <p>Here is an example of the button tag.It is a little bit misleading since it is a button that doesn't do anything.You would want to add some interactivity,perhaps with JavaScript.</p>
+   <button>Open</button><br/><br/>
+   <button>Close</button>
+   <hr/>
+   <h2>meter</h2>
+   <p>The meter tag is cool and can take a lot of attributes.But again it is better if you have some code that can make the attribute values dynamic instead of "hardcoding" them.When you think meter, think of a final score for a test.</p>
+   <meter min="0" max="100" value="50">50%</meter><br/>
+   <meter min="0" max="1" value=".25">25%</meter><br/>
+   <meter min="5" max="10" value="8">60%</meter>
+   <hr/>
+   <h2>progress</h2>
+   <p>The progress tag has a very similar layout to the meter tag.The difference is that there is an assumption that there will be a progression to where the value will equal 100.This tag is often used when filling out a form that has many pages of questions.</p>
+   <label for="bar">The result is:</label>
+   <progress id="bar" min="0" max="100" value="70">70%</progress>
+   <hr/>
+   <h2>iframe</h2>
+   <p>The iframe is used to nest content.It is not supported equally well by all browsers.You will want to explore setting many of the different options such as height and width.</p>
+   <iframe src="table.html"></iframe>
+   <p>You can set the width to something greater</p>
+   <iframe src="table.html" width="1200px" height="400px"></iframe>
+   <hr/>
+   <h2>bdo</h2>
+   <p>bdo stands for bidirectional override. This tag can be used to change the direction of the text. </p>
+   <p><bdo dir="ltr">This is text will go left to right.</bdo></p>
+   <p><bdo dir="rtl">This is text will go right to left.</bdo></p>
+   <hr/>
+   <hr/>
+   <hr/>
+</body>
+</html>
